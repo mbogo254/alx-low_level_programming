@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
  * main - print the string in the put function
  *
- * return: success
+ *Return: success
  */
 int main(void)
 {
