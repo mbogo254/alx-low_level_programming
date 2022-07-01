@@ -32,7 +32,7 @@ int main(void)
 						putchar('0' + c);
 						if (!(f + e == 18 && c + d == 17 && d == 9))
 						{
-							putchar(' ');
+							putchar(',');
 							putchar(' ');
 						}
 					}
