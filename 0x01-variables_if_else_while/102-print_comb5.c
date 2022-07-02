@@ -7,43 +7,23 @@
  */
 int main(void)
 {
-	int c;
-	int d;
-	int e;
-	int f = 0;
+int ch;
+int n;
 
-	while (f < 10)
-	{
-		e = 0;
-		while (e < 10)
-		{
-			d = 0;
-			while (d < 10)
-			{
-				c = 0;
-				while (c < 10)
-				{
-					if (!(f == c && e == d))
-					{
-						putchar('0' + f);
-						putchar('0' + e);
-						putchar(' ');
-						putchar('0' + d);
-						putchar('0' + c);
-						if (!(f + e == 18 && c + d == 17 && d == 9))
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
-					c++;
-				}
-				d++;
-			}
-			e++;
-		}
-		f++;
-	}
-	putchar('\n');
-	return (0);
+for (ch = 48; ch <= 57; ch++)
+{
+for (n = 48; n <= 57; n++)
+{
+putchar(ch);
+putchar(n);
+if (ch != 57 || n != 57)
+{
+putchar(44);
+putchar(32);
+}
+}
+}
+
+putchar('\n');
+return (0);
 }
