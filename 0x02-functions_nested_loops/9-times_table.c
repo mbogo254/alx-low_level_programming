@@ -4,7 +4,7 @@
  * times_table - prints tables
  * Return:0
  */
-voidv times_table(void)
+void times_table(void)
 {
 	int a;
 	int b;
